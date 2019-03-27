@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* header */
+/* header {
+    height: 44vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/abstract-background-1280x341.jpg) no-repeat center;
+} */
+
+/* background: linear-gradient(rgba(0, 0, 0, 0), rgb(208, 208, 208)) */
+/* no-repeat center center /cover; */
+
+header {
+    height: 24vh;
+    background: url(images/Untitled-3.jpg) no-repeat center /cover;
+}
+
+/* banner */
+.banner {
+    position: absolute;
+    top: 12%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mission {
+    background: #151f20;
+}
+
+
+
+/* contact */
+
+.input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    border-radius: 0;
+    transition: all .8s;
+}
+
+.input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #3992A6;
+    border-bottom: 2px solid #3992A6;
+}
+
+.submit-button {
+    background: rgb(139, 210, 238);
+    border: 1px #151f20;
+    color: #eee;
+    transition: all .3s;
+    /* float: right; */
+    /* height: 30px; */
+    font-weight: bold;
+    /* font-size: 12px; */
+    min-width: 100px;
+    border-radius: 50px;
+}
+
+.submit-button:hover {
+    background: rgb(79, 175, 184);
+    transform: translateY(-3px);
+}
+
+
+element.style {}
+
+.input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    border-radius: 0;
+    transition: all .8s;
+}
+
+
+.label {
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.input:placeholder-shown+.label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* end of contact */

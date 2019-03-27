@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/com.akshay.PoolBlue.png">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
+    </script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Action icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>PhoneBook</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="text-light text-md-right text-center banner">
+            <h1 class="display-11 banner-heading"><span class="display-4">W</span>elcome to the <span
+                    class="text-uppercase"></span><span class="display-4">P</span>hone
+                <span class="display-4">B</span>ook</h1>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- table -->
+    <div class="container pt-3">
+        <table class="table table-hover" id="phone-address">
+            <thead class="thead table-borderless">
+                <tr>
+                    <!-- <th>#</th> -->
+                    <th>Id<i class="fa fa-sort" style="color:rgb(95, 95, 95)"></i></th>
+                    <th>First Name <i class="fa fa-sort" style="color:rgb(95, 95, 95)"></i></th>
+                    <th>Last Name</th>
+                    <th>Number</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <th>1</th> -->
+                    <!-- <td>John</td> -->
+                    <!-- <td>Doe</td> -->
+                    <!-- <td>94820294</td> -->
+                    <!-- <td>jdoe@gmail.com</td> -->
+                    <!-- <td align="center">
+
+                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i
+                                class="material-icons">&#xE254;</i></a>
+                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                                class="material-icons">&#xE872;</i></a>
+
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end of table -->
+
+    <!-- contact -->
+    <section class="contact p-1 ml-1">
+        <div class="container">
+            <form id="create-item-form">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6">
+                        <!-- <h3 class="display-7 mb-5 text-black">Get In Touch</h3> -->
+                        <div class="form-group py-4">
+                            <input type="text" name="firstname" title="FirstName"
+                                class="form-control firstname my-2 p-2 input" placeholder="First Name">
+                            <label for="name" class="label">First Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="form-group py-4">
+                            <input type="text" name="lastname" title="LastName"
+                                class="form-control lastname my-2 p-2 input" placeholder="Last Name">
+                            <label for="email" class="label">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="form-group py-4">
+                            <input type="text" name="number" title="Number" class="form-control number my-2 p-2 input"
+                                placeholder="Number">
+                            <label for="email" class="label">Number</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group py-4">
+                            <input type="text" name="email" title="Email" class="form-control email my-2 p-2 input"
+                                placeholder="Email Address">
+                            <label for="email" class="label">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-4">
+                        <button type="submit" class="btn p-2 font-weight-bold text-uppercase submit-button"><i
+                                class="fa fa-plus"></i> Add
+                            Contact</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end of contact -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="js/lib/jquery-3.3.1.js"></script>
+    <script src="js/phone-book.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
