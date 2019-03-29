@@ -56,6 +56,11 @@ header {
 
 
 
+/*search bar*/
+
+
+/*end of search bar*/
+
 /* contact */
 
 .input {
@@ -92,7 +97,6 @@ header {
     transform: translateY(-3px);
 }
 
-
 element.style {}
 
 .input {
@@ -118,6 +122,7 @@ element.style {}
     opacity: 0;
     visibility: hidden;
 }
+
 
 
 /* end of contact */

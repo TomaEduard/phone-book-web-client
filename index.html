@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+    <!--fa-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
         integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
-    </script>
+    </script> -->
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -38,6 +41,32 @@
     </header>
     <!-- end of header -->
 
+    <!--search bar-->
+    <!-- contact -->
+    <section class="search">
+        <div class="container">
+            <form id="search-item-form">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control email input"
+                                   placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6">
+                        <a href="#" class="fa fa-search fa-lg text-info pt-2" data-id="${item.id}"></a></td>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!--end of search bar-->
+
     <!-- table -->
     <div class="container pt-3">
         <table class="table table-hover" id="phone-address">
@@ -50,6 +79,9 @@
                     <th>Number</th>
                     <th>Email</th>
                     <th>Actions</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
